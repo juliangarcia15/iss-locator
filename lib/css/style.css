@@ -1,0 +1,27 @@
+.window-content {
+    background-color: #000;
+}
+
+span.icon.icon-arrows-ccw,
+span.icon.icon-paper-plane,
+span.icon.icon-popup {
+    color: #fff;
+    float: right;
+}
+
+.map-wrapper {
+    margin: auto auto;
+}
+
+.map {
+    /*height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    left: 50%;*/
+    top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;
+}
+
+.toolbar-footer form {
+    display: flex;
+}
