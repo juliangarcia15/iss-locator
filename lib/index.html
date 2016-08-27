@@ -14,26 +14,72 @@
     <div class="window">
         <!-- Your app's content goes inside .window-content -->
         <div class="window-content">
-            <div class="map-wrapper">
-                <div id="iss-location-map" class="map"></div>
+            <div class="pane-group">
+                <div class="pane-sm sidebar">
+                    <ul class="list-group">
+                        <!-- list-group-header -->
+                        <li class="list-group-header">
+                            <div class="form-group text-center">
+                                <h4 class="form-item">Where is the ISS?</h4>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-group text-center">
+                                <button id="addNewMark" class="btn btn-primary">
+                                    Add New Marker&nbsp;<span class="icon icon-rocket"></span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-group text-center">
+                                <button id="flyToLastMark" class="btn btn-primary">
+                                    Fly to Last Marker&nbsp;<span class="icon icon-flight"></span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pane">
+                    <div class="map-wrapper">
+                        <div id="iss-location-map" class="map"></div>
+                    </div>
+                </div>
+                <div class="pane-sm sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="form-group text-center">
+                                <h4 class="form-item">Look up for the ISS:</h4>
+                            </div>
+                            <form id="nextPasses">
+                                <div class="form-group">
+                                    <label class="form-item">Address</label>
+                                    <input type="text" name="address" class="form-control form-item" placeholder="i.e. Eugene,OR">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-control-label"># of Passes</label>
+                                    <select class="form-control-thin pull-right" name="passesCount">
+                                        <option>1</option>
+                                        <!-- <option>2</option> -->
+                                        <!-- <option>3</option> -->
+                                        <!-- <option>4</option> -->
+                                        <!-- <option>5</option> -->
+                                    </select>
+                                </div>
+                                <div class="form-actions text-center">
+                                    <button class="btn btn-form btn-primary form-item" type="submit">
+                                        Next Pass Time&nbsp;<span class="icon icon-clock"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- .toolbar-footer sits at the bottom of your app -->
         <footer class="toolbar toolbar-footer">
-            <div class="toolbar-actions">
-                <div class="pull-left">
-                    <button id="pass-time" class="btn btn-form btn-primary" type="submit">
-                        Next Pass Time&nbsp;<span class="icon icon-paper-plane"></span>
-                    </button>
-                </div>
-                <div class="btn-group pull-right">
-                    <button id="popout" class="btn btn-primary">
-                        <span class="icon icon-popup"></span>
-                    </button>
-                    <button id="refresh" class="btn btn-primary">
-                        Refresh&nbsp;<span class="icon icon-arrows-ccw"></span>
-                    </button>
-                </div>
+            <div class="pull-right">
+                <small class="padded-more">An electron app maintained by Julian Garcia</small>
             </div>
         </footer>
     </div>

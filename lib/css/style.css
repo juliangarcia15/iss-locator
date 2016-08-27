@@ -2,8 +2,33 @@
     background-color: #000;
 }
 
-span.icon.icon-arrows-ccw,
-span.icon.icon-paper-plane,
+.pane-sm.sidebar .form-group .form-item {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control-label {
+    display: inline-block;
+}
+
+.form-control-thin {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 33%;
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+span.icon.icon-rocket,
+span.icon.icon-flight,
+span.icon.icon-clock,
 span.icon.icon-popup {
     color: #fff;
     float: right;
@@ -14,12 +39,11 @@ span.icon.icon-popup {
 }
 
 .map {
-    /*height: 50%;
-    width: 50%;
-    position: absolute;
-    top: 0%;
-    left: 50%;*/
-    top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute !important;
 }
 
 .toolbar-footer form {
